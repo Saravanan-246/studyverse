@@ -1,0 +1,30 @@
+﻿/* =========================================================
+   STUDYVERSE — GLOBAL STYLE ENTRY
+   ========================================================= */
+
+/* 1. Google Fonts (Must be first) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
+/* 2. Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* 3. Unified Base Foundation */
+@import "./styles/base.css";
+
+/* 4. Component & Section Styles */
+@import "./styles/preloader.css";
+@import "./styles/navbar.css";
+@import "./styles/hero.css";
+@import "./styles/materials.css";
+@import "./styles/footer.css";
+
+/* 5. Bind Tailwind v4 Theme Tokens (Must come after all @imports) */
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-sv-paper: #f8f7f3;
+  --color-sv-ink: #282532;
+  --color-sv-violet: #7654c8;
+}
